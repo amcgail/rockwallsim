@@ -1,6 +1,9 @@
 Ideas which have been gestating for a while.
 
+Each of the html files are standalone, and if opened in a browser should do their thing. They do require either an internet connection or a local inclusion of jQuery.
+
 The way the hardware works here is each block is connected to one of the ones next to it, and can only communicate with this block.
+If you would like to see the order of connection, run *showsequence.html*.
 The goal is to make amazing animations and entertainment.
 The problem is the latency. With the microprocessors (mid-range PICs) embedded in each block running EUSART communication at ~10kbps to 100kbps to the next, and each message having to go through all others before it, that's anywhere from about .2 seconds per command to 2 seconds per command.
 This is not to mention that the latency will be different depending on which square you're sending the message to, there being anywhere from a 400us to 4ms square-to-square latency.
